@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- header section -->
+    <header>
+        <a href="/" class="logo">Museum</a>
+        <ul class="nav">
+            <li><a class="nav-btn active" href="/"><ion-icon name="home-outline"></ion-icon></a></li>
+            <li><a class="nav-btn" href="#" data-target="exhibition">exhibition</a></li>
+            <li><a class="nav-btn" href="#" data-target="collection">collection</a></li>
+            <li><a class="nav-btn" href="#" data-target="events">events</a></li>
+            <li><a class="nav-btn" href="#" data-target="shop">shop</a></li>
+        </ul>
+        <a href="#" class="bag">
+            <ion-icon name="bag-outline"></ion-icon>
+            <span class="number">S</span>
+        </a>
+        <a href="#" class="menu" onclick="toggleMenu();"><ion-icon name="grid-outline"></ion-icon></a>
+    </header>
+    <!-- mobile section  -->
+     <ul class=" nav-mobile">
+        <li><a class="nav-btn active" href="/"><ion-icon name="home-outline"></ion-icon></a></li>
+        <li><a class="nav-btn" href="#" data-target="exhibition">exhibition</a></li>
+        <li><a class="nav-btn" href="#" data-target="collection">collection</a></li>
+        <li><a class="nav-btn" href="#" data-target="events">events</a></li>
+        <li><a class="nav-btn" href="#" data-target="shop">shop</a></li>
+    </ul>
+    <!-- hero banner section -->
+    <div class="banner container-fluid">
+        <div class="row d-flex align-item-center">
+            <div class="col-lg-5 col-md-12">
+                <!-- applu bootstrap to find the content -->
+                <div id="carouselIndicators" class="carousel slide">
+                    <!-- <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div> -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="content">
+                                <h1>Royal</h1>
+                                <h4>Furniture</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sint beatae repellat
+                                    recusandae,
+                                    sunt nisi debitis eligendi aliquid nulla distinctio adipisci numquam, iste
+                                    explicabo!
+                                </p>
+                                <a data-bs-toggle="modal" data-bs-target="#itemModal" class="content-btn" href="#">art
+                                    exhibition</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="content">
+                                <h1>Antique</h1>
+                                <h4>collection</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sint beatae repellat
+                                    recusandae,
+                                    sunt nisi debitis eligendi aliquid nulla distinctio adipisci numquam, iste
+                                    explicabo!
+                                </p>
+                                <a class="content-btn" href="#">art exhibition</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="content">
+                                <h1>Royal</h1>
+                                <h4> Book Collection</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sint beatae repellat
+                                    recusandae,
+                                    sunt nisi debitis eligendi aliquid nulla distinctio adipisci numquam, iste
+                                    explicabo!
+                                </p>
+                                <a class="content-btn" href="#">art exhibition</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="content">
+                                <h1>royal</h1>
+                                <h4> furniture</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sint beatae repellat
+                                    recusandae,
+                                    sunt nisi debitis eligendi aliquid nulla distinctio adipisci numquam, iste
+                                    explicabo!
+                                </p>
+                                <a class="content-btn" href="#">art exhibition</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="content">
+                                <h1>Royal</h1>
+                                <h4>Fan hand</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sint beatae repellat
+                                    recusandae,
+                                    sunt nisi debitis eligendi aliquid nulla distinctio adipisci numquam, iste
+                                    explicabo!
+                                </p>
+                                <a class="content-btn" href="#">art exhibition</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="content">
+                                <h1>Royal</h1>
+                                <h4>paired vases</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sint beatae repellat
+                                    recusandae,
+                                    sunt nisi debitis eligendi aliquid nulla distinctio adipisci numquam, iste
+                                    explicabo!
+                                </p>
+                                <a class="content-btn" href="#">art exhibition</a>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="content">
+                                <h1>Elegent</h1>
+                                <h4>Vases</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sint beatae repellat
+                                    recusandae,
+                                    sunt nisi debitis eligendi aliquid nulla distinctio adipisci numquam, iste
+                                    explicabo!
+                                </p>
+                                <a class="content-btn" href="#">art exhibition</a>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="content">
+                                <h1>Golden</h1>
+                                <h4>Paint vase</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sint beatae repellat
+                                    recusandae,
+                                    sunt nisi debitis eligendi aliquid nulla distinctio adipisci numquam, iste
+                                    explicabo!
+                                </p>
+                                <a class="content-btn" href="#">art exhibition</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-12">
+                <div id="drag-container">
+                    <div id="spin-container">
+                        <img data-bs-target="#carouselIndicators" data-bs-slide-to="0" src="../images/antique-1.png"
+                            alt="">
+                        <img data-bs-target="#carouselIndicators" data-bs-slide-to="1" src="../images/antique-2.png"
+                            alt="">
+                        <img data-bs-target="#carouselIndicators" data-bs-slide-to="2" src="../images/antique-3.png"
+                            alt="">
+                        <img data-bs-target="#carouselIndicators" data-bs-slide-to="3" src="../images/antique-4.png"
+                            alt="">
+                        <img data-bs-target="#carouselIndicators" data-bs-slide-to="4" src="../images/antique-5.png"
+                            alt="">
+                        <img data-bs-target="#carouselIndicators" data-bs-slide-to="5" src="../images/antique-6.png"
+                            alt="">
+                        <img data-bs-target="#carouselIndicators" data-bs-slide-to="6" src="../images/antique-7.png"
+                            alt="">
+                        <img data-bs-target="#carouselIndicators" data-bs-slide-to="7" src="../images/antique-8.png"
+                            alt="">
+                        <h1>Deep ART</h1>
+                    </div>
+                    <div id="ground"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- main start section -->
+    <main>
+        <section id="exibition" class="exibition ">
+            <div class="exibition-title">
+                <h1>exhibition</h1>
+            </div>
+            <div class="section-content container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img src="/images/exhibition-1.png" alt="" class="exibition-img img-fluid">
+                            </div>
+                            <div class="col-lg-6 d-flex flex-coloumn justify-content-center">
+                                <div class="content">
+                                    <h4>lorem ipsum color sit</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod aliquam, sit
+                                        explicabo porro reiciendis ullam maiores perspiciatis illo nisi enim iste
+                                        voluptatum autem aspernatur Lorem, ipsum dolor sit amet consectetur adipisicing
+                                        elit. Inventore, quo.
+                                    </p>
+                                    <h4 icon_names="currency_rupee_circle" class="price">₹45.60</h4>
+                                    <a href="#" class="content-btn">Book Here</a>
+                                    <!-- <a href="https://wa.me/919678971587">avinash</a> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img src="../images/exhibition-2.png" alt="" class="exibition-img img-fluid">
+                            </div>
+                            <div class="col-lg-6 d-flex flex-coloumn justify-content-center">
+                                <div class="content">
+                                    <h4>lorem ipsum color sit</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod aliquam, sit
+                                        explicabo porro reiciendis ullam maiores perspiciatis illo nisi enim iste
+                                        voluptatum autem aspernatur Lorem, ipsum dolor sit amet consectetur adipisicing
+                                        elit. Inventore, quo.
+                                    </p>
+                                    <h4 icon_names="currency_rupee_circle" class="price">₹55.60</h4>
+                                    <a href="#" class="content-btn">Book Here</a>
+                                    <!-- <a href="https://wa.me/919678971587">avinash</a> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img src="../images/exhibition-4.png" alt="" class="exibition-img img-fluid">
+                            </div>
+                            <div class="col-lg-6 d-flex flex-coloumn justify-content-center">
+                                <div class="content">
+                                    <h4>lorem ipsum color sit</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod aliquam, sit
+                                        explicabo porro reiciendis ullam maiores perspiciatis illo nisi enim iste
+                                        voluptatum autem aspernatur Lorem, ipsum dolor sit amet consectetur adipisicing
+                                        elit. Inventore, quo.
+                                    </p>
+                                    <h4 icon_names="currency_rupee_circle" class="price">₹45.60</h4>
+                                    <a href="#" class="content-btn">Book Here</a>
+                                    <!-- <a href="https://wa.me/919678971587">avinash</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img src="/images/exhibition-4.png" alt="" class="exibition-img img-fluid">
+                            </div>
+                            <div class="col-lg-6 d-flex flex-coloumn justify-content-center">
+                                <div class="content">
+                                    <h4>lorem ipsum color sit</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod aliquam, sit
+                                        explicabo porro reiciendis ullam maiores perspiciatis illo nisi enim iste
+                                        voluptatum autem aspernatur Lorem, ipsum dolor sit amet consectetur adipisicing
+                                        elit. Inventore, quo.
+                                    </p>
+                                    <h4 icon_names="currency_rupee_circle" class="price">₹45.60</h4>
+                                    <a href="#" class="content-btn">Book Here</a>
+                                    <!-- <a href="https://wa.me/919678971587">avinash</a> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img src="../images/exhibition-5.png" alt="" class="exibition-img img-fluid">
+                            </div>
+                            <div class="col-lg-6 d-flex flex-coloumn justify-content-center">
+                                <div class="content">
+                                    <h4>lorem ipsum color sit</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod aliquam, sit
+                                        explicabo porro reiciendis ullam maiores perspiciatis illo nisi enim iste
+                                        voluptatum autem aspernatur Lorem, ipsum dolor sit amet consectetur adipisicing
+                                        elit. Inventore, quo.
+                                    </p>
+                                    <h4 icon_names="currency_rupee_circle" class="price">₹45.60</h4>
+                                    <a href="#" class="content-btn">Book Here</a>
+                                    <!-- <a href="https://wa.me/919678971587">avinash</a> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img src="../images/exhibition-6.png" alt="" class="exibition-img img-fluid">
+                            </div>
+                            <div class="col-lg-6 d-flex flex-coloumn justify-content-center">
+                                <div class="content">
+                                    <h4>lorem ipsum color sit</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod aliquam, sit
+                                        explicabo porro reiciendis ullam maiores perspiciatis illo nisi enim iste
+                                        voluptatum autem aspernatur Lorem, ipsum dolor sit amet consectetur adipisicing
+                                        elit. Inventore, quo.
+                                    </p>
+                                    <h4 icon_names="currency_rupee_circle" class="price">₹45.60</h4>
+                                    <a href="#" class="content-btn">Book Here</a>
+                                    <!-- <a href="https://wa.me/919678971587">avinash</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="collection" class="collection">
+            <div class="collection-tittle">
+                <h1>Col<br> lec <br> tion</h1>
+            </div>
+            <div class="section-content container-fluid">
+                <div class="row">
+                    <div class="col-lg-8 d-flex align-item-center justify-content-end">
+                        <!-- slider main content -->
+                        <div class="swiper artSwipper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides 1 -->
+                                <div class="swiper-slide d-flex align-item-center justify-content-end">
+                                    <div class="art-item">
+                                        <div class="img-box">
+                                            <img src="../images/collection-1 (1).jpeg" alt="" class="art-img img-fluid">
+                                            <img class="art-frame img-fluid " src="../images/frame.png" alt="">
+                                        </div>
+                                        <h3 class="me-3"> This is the arts name</h3>
+                                    </div>
+                                </div>
+                                <!-- slides 2 -->
+                                <div class="swiper-slide d-flex align-item-center justify-content-end">
+                                    <div class="art-item">
+                                        <div class="img-box">
+                                            <img src="../images/collection-2.jpeg" alt="" class="art-img img-fluid">
+                                            <img class="art-frame img-fluid " src="../images/frame.png" alt="">
+                                        </div>
+                                        <h3 class="me-3"> This is the arts name</h3>
+                                    </div>
+                                </div>
+                                <!-- slides 3 -->
+                                <div class="swiper-slide d-flex align-item-center justify-content-end">
+                                    <div class="art-item">
+                                        <div class="img-box">
+                                            <img src="../images/collection-3.jpg" alt="" class="art-img img-fluid">
+                                            <img class="art-frame img-fluid " src="../images/frame.png" alt="">
+                                        </div>
+                                        <h3 class="me-3"> This is the arts name</h3>
+                                    </div>
+                                </div>
+                                <!-- slide 4 -->
+                                <div class="swiper-slide d-flex align-item-center justify-content-end">
+                                    <div class="art-item">
+                                        <div class="img-box">
+                                            <img src="../images/collection-4.jpeg" alt="" class="art-img img-fluid">
+                                            <img class="art-frame img-fluid " src="../images/frame.png" alt="">
+                                        </div>
+                                        <h3 class="me-3"> This is the arts name</h3>
+                                    </div>
+                                </div>
+                                <!-- slide 5 -->
+                                <div class="swiper-slide d-flex align-item-center justify-content-end">
+                                    <div class="art-item">
+                                        <div class="img-box">
+                                            <img src="../images/collection-5.jpeg" alt="" class="art-img img-fluid">
+                                            <img class="art-frame img-fluid " src="../images/frame.png" alt="">
+                                        </div>
+                                        <h3 class="me-3"> This is the arts name</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="art-description d-flex flex-coloumn">
+                            <p class="d-inline-flex justify-content-start align-item-center gap-3"><ion-icon
+                                    name="arrow-back-outline"></ion-icon>Arts Item Description Here</p>
+                        </div>
+
+                        <div class="art-description d-flex flex-coloumn">
+                            <p class="d-inline-flex justify-content-start align-item-center gap-3"><ion-icon
+                                    name="arrow-back-outline"></ion-icon>Arts Item Description Here</p>
+                        </div>
+
+                        <div class="art-description d-flex flex-coloumn">
+                            <p class="d-inline-flex justify-content-start align-item-center gap-3"><ion-icon
+                                    name="arrow-back-outline"></ion-icon>Arts Item Description Here</p>
+                        </div>
+
+                        <div class="art-description d-flex flex-coloumn">
+                            <p class="d-inline-flex justify-content-start align-item-center gap-3"><ion-icon
+                                    name="arrow-back-outline"></ion-icon>Arts Item Description Here</p>
+                        </div>
+
+                        <div class="art-description d-flex flex-coloumn">
+                            <p class="d-inline-flex justify-content-start align-item-center gap-3"><ion-icon
+                                    name="arrow-back-outline"></ion-icon>Arts Item Description Here</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- event section -->
+        <section id="events" class="events">
+            <div class="section-content container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="../images/events-1.jpg" alt="" class="img-fluid" />
+                    </div>
+                    <div class="col-lg-6 d-flex flex-column align-item-start justify-content-center">
+                        <h1>Lorem ipsum dolor sit.</h1>
+                        <h4> Events time :26 october ,10.30pm</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum tempora voluptate,
+                            officia fuga nihil maxime, natus ducimus pariatur eveniet quibusdam voluptatem consequuntur
+                            consequatur ipsum laboriosam nemo sit! Nemo pariatur sit minus ad perferendis quo molestiae,
+                            fuga nam,
+                            exercitationem voluptatibus ab natus! Numquam reprehenderit nemo amet ducimus, dolore
+                            voluptatum dolor?
+                        </p>
+                        <a href="#" class="content-btn">Book Now</a>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 d-flex flex-column align-item-start justify-content-center">
+                        <h1>Lorem ipsum dolor sit.</h1>
+                        <h4> Events time :12 August ,12.30pm</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum tempora voluptate,
+                            officia fuga nihil maxime, natus ducimus pariatur eveniet quibusdam voluptatem consequuntur
+                            consequatur ipsum laboriosam nemo sit! Nemo pariatur sit minus ad perferendis quo molestiae,
+                            fuga nam,
+                            exercitationem voluptatibus ab natus! Numquam reprehenderit nemo amet ducimus, dolore
+                            voluptatum dolor?
+                        </p>
+                        <a href="#" class="content-btn">Book Now</a>
+
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="../images/events-1.jpg" alt="" class="img-fluid" />
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="../images/events-2.jpg" alt="" class="img-fluid" />
+                    </div>
+                    <div class="col-lg-6 d-flex flex-column align-item-start justify-content-center">
+                        <h1>Lorem ipsum dolor sit.</h1>
+                        <h4> Events time :22 September ,3.30pm</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum tempora voluptate,
+                            officia fuga nihil maxime, natus ducimus pariatur eveniet quibusdam voluptatem consequuntur
+                            consequatur ipsum laboriosam nemo sit! Nemo pariatur sit minus ad perferendis quo molestiae,
+                            fuga nam,
+                            exercitationem voluptatibus ab natus! Numquam reprehenderit nemo amet ducimus, dolore
+                            voluptatum dolor?
+                        </p>
+                        <a href="#" class="content-btn">Book Now</a>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 d-flex flex-column align-item-start justify-content-center">
+                        <h1>Lorem ipsum dolor sit.</h1>
+                        <h4> Events time :22 September ,3.30pm</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum tempora voluptate,
+                            officia fuga nihil maxime, natus ducimus pariatur eveniet quibusdam voluptatem consequuntur
+                            consequatur ipsum laboriosam nemo sit! Nemo pariatur sit minus ad perferendis quo molestiae,
+                            fuga nam,
+                            exercitationem voluptatibus ab natus! Numquam reprehenderit nemo amet ducimus, dolore
+                            voluptatum dolor?
+                        </p>
+                        <a href="#" class="content-btn">Book Now</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="../images/events-3.jpg" alt="" class="img-fluid" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="../images/events-4.jpg" alt="" class="img-fluid" />
+                    </div>
+                    <div class="col-lg-6 d-flex flex-column align-item-start justify-content-center">
+                        <h1>Lorem ipsum dolor sit.</h1>
+                        <h4> Events time :25 September ,1.30pm</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum tempora voluptate,
+                            officia fuga nihil maxime, natus ducimus pariatur eveniet quibusdam voluptatem consequuntur
+                            consequatur ipsum laboriosam nemo sit! Nemo pariatur sit minus ad perferendis quo molestiae,
+                            fuga nam,
+                            exercitationem voluptatibus ab natus! Numquam reprehenderit nemo amet ducimus, dolore
+                            voluptatum dolor?
+                        </p>
+                        <a href="#" class="content-btn">Book Now</a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="shop" class="shop">
+            <div class="section-content container">
+                <div class="raw">
+                    <div class="col-lg-12 d-flex justify-content-center">
+                        <ul id="portfolio-filters">
+                            <li data-filter="*" class="filter-active">All</li>
+                            <li data-filter=".filter-gifts">Gifts</li>
+                            <li data-filter=".filter-Collectibles">collectibles</li>
+                            <li data-filter=".filter-Book">Book</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row portfolio-container">
+                    <div class="col-lg-4 col-md-6 portfolio-items filter-gifts">
+                        <div class="portfolio-wrap">
+                            <img src="/images/shop/portfolio-1.jpg" alt="" class="img-fluid">
+                            <div class="portfolio-info">
+                                <h4>Gift One</h4>
+                                <p>₹24.66</p>
+                                <div class="portfolio-links">
+                                    <a href="/images/shop/portfolio-1.jpg"><ion-icon name="bag-add-outline"></ion-icon>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- mapp the porfolio item -->
+                    <div class="col-lg-4 col-md-6 portfolio-items filter-gifts">
+                        <div class="portfolio-wrap">
+                            <img src="/images/shop/portfolio-2.jpg" alt="" class="img-fluid">
+                            <div class="portfolio-info">
+                                <h4>Gift One</h4>
+                                <p>₹24.66</p>
+                                <div class="portfolio-links">
+                                    <a href="/images/shop/portfolio-1.jpg"><ion-icon name="bag-add-outline"></ion-icon>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-items filter-Collectibles">
+                        <div class="portfolio-wrap">
+                            <img src="/images/shop/portfolio-3.jpg" alt="" class="img-fluid">
+                            <div class="portfolio-info">
+                                <h4>Gift One</h4>
+                                <p>₹24.66</p>
+                                <div class="portfolio-links">
+                                    <a href="/images/shop/portfolio-1.jpg"><ion-icon name="bag-add-outline"></ion-icon>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-items filter-gifts">
+                        <div class="portfolio-wrap">
+                            <img src="/images/shop/portfolio-4.jpg" alt="" class="img-fluid">
+                            <div class="portfolio-info">
+                                <h4>Gift One</h4>
+                                <p>₹24.66</p>
+                                <div class="portfolio-links">
+                                    <a href="/images/shop/portfolio-1.jpg"><ion-icon name="bag-add-outline"></ion-icon>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-items filter-Book">
+                        <div class="portfolio-wrap">
+                            <img src="/images/shop/portfolio-5.jpg" alt="" class="img-fluid">
+                            <div class="portfolio-info">
+                                <h4>Gift One</h4>
+                                <p>₹24.66</p>
+                                <div class="portfolio-links">
+                                    <a href="/images/shop/portfolio-1.jpg"><ion-icon name="bag-add-outline"></ion-icon>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-items filter-Collectibles">
+                        <div class="portfolio-wrap">
+                            <img src="/images/shop/portfolio-6.jpg" alt="" class="img-fluid">
+                            <div class="portfolio-info">
+                                <h4>Gift One</h4>
+                                <p>₹24.66</p>
+                                <div class="portfolio-links">
+                                    <a href="/images/shop/portfolio-1.jpg"><ion-icon name="bag-add-outline"></ion-icon>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-items filter-Book">
+                        <div class="portfolio-wrap">
+                            <img src="/images/shop/portfolio-7.jpg" alt="" class="img-fluid">
+                            <div class="portfolio-info">
+                                <h4>Gift One</h4>
+                                <p>₹24.66</p>
+                                <div class="portfolio-links">
+                                    <a href="/images/shop/portfolio-1.jpg"><ion-icon name="bag-add-outline"></ion-icon>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-items filter-Collectibles">
+                        <div class="portfolio-wrap">
+                            <img src="/images/shop/portfolio-8.jpg" alt="" class="img-fluid">
+                            <div class="portfolio-info">
+                                <h4>Gift One</h4>
+                                <p>₹24.66</p>
+                                <div class="portfolio-links">
+                                    <a href="/images/shop/portfolio-1.jpg"><ion-icon name="bag-add-outline"></ion-icon>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-items filter-Book">
+                        <div class="portfolio-wrap">
+                            <img src="/images/shop/portfolio-9.jpg" alt="" class="img-fluid">
+                            <div class="portfolio-info">
+                                <h4>Gift One</h4>
+                                <p>₹24.66</p>
+                                <div class="portfolio-links">
+                                    <a href="/images/shop/portfolio-1.jpg"><ion-icon name="bag-add-outline"></ion-icon>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- collection section -->
+    <!--  shop section -->
+    <!-- main section end // -->
+    <!-- modal -->
+    <div class="modal fade" id="itemModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Book your favourite exhibition now</h1>
+                </div>
+                <div class="modal-body">
+                    <!-- ...contact are booking from here -->
+                    <div class="container contact">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="info-box mb-4">
+                                    <ion-icon name="locate"></ion-icon>
+                                    <h3>Exhibition Location</h3>
+                                    <p> Street Name,City Name, Pincode-123456</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="info-box mb-4">
+                                    <ion-icon name="mail-outline"></ion-icon>
+                                    <h3>Mail Us</h3>
+                                    <p>contact@gamil.com</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="info-box mb-4">
+                                    <ion-icon name="call"></ion-icon>
+                                    <h3>call Us</h3>
+                                    <p>+919999912345</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <iframe class="mb-4 mb-lg-0"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d356933.8714888409!2d10.413661869378636!3d45.65994086120074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781eca8aec020b9%3A0x91dcf07c1c969bb8!2sGarda!5e0!3m2!1spl!2spl!4v1672244147501!5m2!1spl!2spl"
+                                    style="border:0; width: 100%; height: 384px" allowfullscreen="" frameborder="0">
+                                </iframe>
+                            </div>
+                            <div class="col-lg-6">
+                                <form class="contact-form">
+                                    <div class="row">
+                                        <div class="col-md-6 form-group">
+                                            <input type="text" name="name" class="form-control" id="name"
+                                                placeholder=" your name" required />
+                                        </div>
+                                        <div class="col-md-6 form-group mt-3 mt-md-0">
+                                            <input type="email" name="email" class="form-control" id="email"
+                                                placeholder=" your name Email" required />
+                                        </div>
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <input type="text" class="form-control" id="subject" placeholder="Subject"
+                                            required />
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <textarea name="message" rows="5" class="form-control" placeholder="Message"
+                                            required></textarea>
+                                    </div>
+                                    <div class="text-center">
+                                        <button class="content-btn" type="submit">
+                                            Book Now
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <ul class="sci">
+                                <li>
+                                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                                </li>
+                                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                                <li><a href="#"><ion-icon name="logo-youtube"></ion-icon></a></li>
+                                <li><a href="#"><ion-icon name="share-social-outline"></ion-icon></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="modal-close-btn" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- javascript vendor -->
+    <!-- <a href="https://www.flaticon.com/free-icons/value" title="value icons">Value icons created by Kiranshastry - Flaticon</a> -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- script bootstrap -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../js/caros.js"></script>
+    <script src="/js/isotops.js"></script>
+    <script src="./swiper.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
